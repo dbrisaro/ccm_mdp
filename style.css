@@ -36,7 +36,6 @@ width: 100%;
 	cursor: auto;
 }
 
-
 .col-quarter p{
 	font-size: 18px;
 	margin: 0 80px 5px 120px ;
@@ -64,14 +63,8 @@ width: 100%;
 	cursor: pointer;
 }
 
-.circle{
-	fill: black;
-}
-
 
 	/* footer */
-
-
 footer {
 	position: absolute;
 	 left: 0px;
@@ -80,8 +73,7 @@ footer {
 	 text-align: center;
 	 color: #00ADEA;
   }
-  
-  
+    
   .social-footer h2{
 	font-family: 'Handlee';
 	margin: 0;
@@ -101,3 +93,58 @@ footer {
   }
 
 
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+	/* some CSS here */
+
+	.col-quarter h1{
+		font-size: 15px;
+		margin: 2px;
+		color: white;
+		cursor: auto;
+	}
+	
+	.col-quarter p{
+		font-size: 13px;
+		margin: 0 20px 1px 30px ;
+		text-align: justify;
+		color: white;
+	}
+
+	#ccm-logo{
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+		opacity: 0;
+	}
+  }
+  
+  /* #### Mobile Phones Landscape #### */
+  @media screen and (max-device-width: 640px) and (orientation: landscape){
+	/* some CSS here */
+  }
+  
+  /* #### Mobile Phones Portrait or Landscape #### */
+  @media screen and (max-device-width: 640px){
+	/* some CSS here */
+  }
+  
+  /* #### iPhone 4+ Portrait or Landscape #### */
+  @media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+	/* some CSS here */
+  }
+  
+  /* #### iPhone 5 Portrait or Landscape #### */
+  @media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+	/* some CSS here */
+  }
+  
+  /* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+  @media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+	/* some CSS here */
+  }
+  
+  /* #### Tablets Portrait or Landscape #### */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	/* some CSS here */
+  }
