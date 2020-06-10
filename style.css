@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
-html,body {
-		font-family: 'Raleway';
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        min-height: 100%;
-      }
+html,body { font-family: 'Raleway'; padding: 0; margin: 0; height: 100%; min-height: 100%; }
 
-body{
+body{ 
 	user-select: none; /* supported by Chrome and Opera */
 	-webkit-user-select: none; /* Safari */
 	-khtml-user-select: none; /* Konqueror HTML */
@@ -17,33 +11,15 @@ body{
 	-ms-user-select: none;
 	}
 	
-.quarter{
-width: 50%;
-height: 100%;
-float: left;
-text-align: right;
-}
+.quarter{ width: 50%; height: 100%; float: left; text-align: right; }
 
-.line{
-height: 50%;
-width: 100%;
-}
+.line{ height: 50%; width: 100%; }
 
-.col-quarter h1{
-	font-size: 25px;
-	margin: 20px;
-	color: white;
-	cursor: auto;
-}
+.col-quarter h1{ font-size: 25px; margin: 20px; color: white; cursor: auto; }
 
-.col-quarter p{
-	font-size: 18px;
-	margin: 0 80px 5px 120px ;
-	text-align: justify;
-	color: white;
-}
+.col-quarter p{ font-size: 18px; margin: 0 80px 5px 120px; text-align: justify; color: white; }
 
-.equal, .equal > div[class*='col-'] {  
+.equal, .equal > div[class*='col-'] { 
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -52,72 +28,45 @@ width: 100%;
       flex: 1 0 auto;
   }
 
-#ccm-logo{
-	width: 200px;
-	height: 200px;
-	margin: 50px;
-	opacity: 0;
+#section-logo { text-align: center;}
+
+#ccm-logo{position:relative; width: 200px; height: 200px; margin:0; left:0; top:0; right:0; transform: translate(-50%,50%); opacity: 0; }
+
+#button{ text-align: left }
+
+#button img {width:40px; margin: 10px}
+
+#button:hover{ cursor: pointer; animation: 1s shake;}
+
+@keyframes shake{ 
+  20% {transform: translateY(-6px)}
+  40% {transform: translateY(6px)}
+  60% {transform: translateY(-3px)}
+  80% {transform: translateY(3px)}
 }
 
-#button:hover{
-	cursor: pointer;
-}
-
-
-	/* footer */
-footer {
-	position: absolute;
-	 left: 0px;
-	 bottom: 10px;
-	 width: 100%;
-	 text-align: center;
-	 color: #00ADEA;
-  }
+@keyframes movex{ 100% {transform: translateX(-100px)}}
+/* footer */
+footer { position: absolute; left: 0px; bottom: 10px; width: 100%; text-align: center; color: #00ADEA; }
     
-  .social-footer h2{
-	font-family: 'Handlee';
-	margin: 0;
-	border: 0px solid black;
-	text-transform: lowercase;
-	font-size: 20px
-  }
+.social-footer h2{ font-family: 'Handlee'; margin: 0; border: 0px solid black; text-transform: lowercase; font-size: 20px }
   
-  .social-footer{
-	  opacity: 0;
-	   display: table;
-	  text-align: center;
-	  margin-left: auto;
-	  margin-right: auto;
-	border: 0px solid black;
-	
-  }
+.social-footer{ opacity: 0; display: table; text-align: center; margin-left: auto; margin-right: auto; border: 0px solid black; }
+
+.social-footer a {text-decoration: none; color: #00ADEA; margin: 10px; vertical-align: middle;}
+
+.social-footer a:hover {color: black;}
 
 
 /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px) and (orientation: portrait){
-	/* some CSS here */
+  @media screen and (max-device-width: 480px) and (orientation: portrait){
 
-	.col-quarter h1{
-		font-size: 15px;
-		margin: 2px;
-		color: white;
-		cursor: auto;
-	}
-	
-	.col-quarter p{
-		font-size: 13px;
-		margin: 0;
-		text-align: justify;
-		color: white;
-	}
+.col-quarter h1{ font-size: 25px; margin: 8px; }
 
-	#ccm-logo{
-		width: 30px;
-		height: 30px;
-		margin: 1px;
-		opacity: 0;
-	}
-  }
+.col-quarter p{ font-size: 12px; margin: 0 8px 2px 12px; }
+
+#ccm-logo{ width: 150px; height: 150px; left:0; top:0; right:0; opacity: 0; transform: translate(0,0);}
+
   
   /* #### Mobile Phones Landscape #### */
   @media screen and (max-device-width: 640px) and (orientation: landscape){

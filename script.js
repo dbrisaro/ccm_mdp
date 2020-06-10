@@ -20,6 +20,7 @@ logo.style.transition = "all 2s ease"
 sectionAbout.style.transition = "all 2s ease"
 sectionObjective.style.transition = "all 2s ease"
 sectionTeam.style.transition = "all 2s ease"
+footer.style.transition = "all 2s ease"
 
 sectionTitleAbout.style.transition = "all 2s ease"
 sectionTitleTeam.style.transition = "all 2s ease"
@@ -30,6 +31,7 @@ sectionParagraphTeam.style.transition = "all 3s ease"
 sectionParagraphObjective.style.transition = "all 3s ease"
 
 button.onclick = () => {
+	button.style.animation = "1s movex forwards";
 	logo.style.opacity = "1";
 	
 	sectionTitleAbout.style.cursor = "pointer"
