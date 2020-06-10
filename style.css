@@ -63,7 +63,7 @@ footer { position: absolute; left: 0px; bottom: 10px; width: 100%; text-align: c
 
 .col-quarter h1{ font-size: 25px; margin: 8px; }
 
-.col-quarter p{ font-size: 12px; margin: 0 8px 2px 12px; text-align: center}
+.col-quarter p{ font-size: 12px; margin: 0 15px 2px 15px; text-align: center}
 
 #ccm-logo{ width: 150px; height: 150px; left:0; top:0; right:0; opacity: 0; transform: translate(0,0);}
 
